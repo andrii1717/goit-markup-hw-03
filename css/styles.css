@@ -29,13 +29,13 @@ h6 {
 .container {
   width: 1158px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* header */
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  padding: 0 15px;
 }
 
 .page-header .container {
@@ -70,6 +70,7 @@ h6 {
 }
 
 .header-menu-item {
+  padding: 24px 0;
 }
 .header-menu-link {
   font-weight: 500;
@@ -203,8 +204,11 @@ h6 {
 }
 
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+  position: absolute;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Section 3  */
@@ -234,7 +238,7 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 .team-img {
