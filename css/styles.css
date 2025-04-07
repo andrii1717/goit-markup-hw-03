@@ -29,23 +29,20 @@ h6 {
 .container {
   width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 /* header */
 
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+  padding: 0 15px;
+}
+
 .page-header .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #e7e9fc;
-}
-.header-space {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
@@ -90,13 +87,13 @@ h6 {
 
 .header-contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
 .header-contacts-list {
   gap: 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .header-contacts-item {
@@ -206,15 +203,8 @@ h6 {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
-  border: 0;
+  position: fixed;
+  transform: scale(0);
 }
 
 /* Section 3  */
