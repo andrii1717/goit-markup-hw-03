@@ -52,9 +52,13 @@ h6 {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  margin-right: 76px;
+
   display: flex;
   align-items: center;
+}
+
+.page-navigation .logo {
+  margin-right: 76px;
 }
 
 .page-navigation {
@@ -77,6 +81,7 @@ h6 {
   color: #2e2f42;
   text-decoration: none;
   padding: 24px 0;
+  display: block;
 }
 
 .header-menu-link:hover,
